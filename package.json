@@ -1,5 +1,6 @@
 {
   "name": "will-you-be-my-valentine",
+  "homepage": "https://titanhacky.github.io/be-my-valentine/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.6",
