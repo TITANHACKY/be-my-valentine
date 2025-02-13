@@ -5,10 +5,10 @@ import { Helmet } from "react-helmet-async";
 
 
 const title = "Be my valentine?";
-const description = "Be my valentine?";
+const description = "Will you be my valentine?";
 const keywords = "Be my valentine?";
-const pageURL = "";
-const imageURL = "";
+const pageURL = "https://titanhacky.github.io/be-my-valentine/";
+const imageURL = "https://titanhacky.github.io/be-my-valentine/would-you-be-my-valentine.jpg";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
