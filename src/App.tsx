@@ -103,6 +103,9 @@ const MetaTags = () => {
       <meta property="og:description" content={description} />
       <meta property="og:image" content={imageURL} />
       <meta property="og:url" content={pageURL} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={title} />
+      <meta property="og:updated_time" content={new Date().toISOString()} />
     </Helmet>
   );
 };
