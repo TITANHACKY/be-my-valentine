@@ -1,50 +1,88 @@
-# React + TypeScript + Vite
+# Valentine's Day Proposal Website 💝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cute and interactive Valentine's Day proposal website built with React, TypeScript, and Tailwind CSS. The website features an adorable interface with animated elements, growing "Yes" button, and playful responses to "No" clicks.
 
-Currently, two official plugins are available:
+![Valentine's Website Preview](preview.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Interactive UI with growing "Yes" button
+- Animated love-themed SVG decorations
+- Multiple playful responses to "No" clicks
+- Responsive design for all devices
+- Custom font (Protest Riot) for a playful typography
+- Beautiful background with love-themed imagery
+- Meta tags for social media sharing
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- React Helmet Async (for meta tags)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/TITANHACKY/be-my-valentine.git
+cd be-my-valentine
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+yarn install
 ```
+
+3. Start the development server:
+
+```bash
+yarn dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173` to view the website.
+
+## 🎨 Customization
+
+You can customize the website by:
+
+1. Modifying the phrases in the `getNoButtonText` function in `App.tsx`
+2. Changing the background image in `index.css`
+3. Updating the SVG decorations in the `assets` folder
+4. Adjusting the button styles and animations in the Tailwind classes
+
+## 📱 Responsive Design
+
+The website is fully responsive and works well on:
+- Mobile devices
+- Tablets
+- Desktop computers
+
+## 🌐 Meta Tags
+
+The project includes meta tags for better SEO and social media sharing. You can customize them by updating the constants in `App.tsx`:
+
+```tsx
+const title = "Be my valentine?";
+const description = "Be my valentine?";
+const keywords = "Be my valentine?";
+const imageURL = "https://example.com/image.jpg";
+const pageURL = "https://example.com";
+```
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
